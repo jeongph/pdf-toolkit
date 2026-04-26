@@ -68,16 +68,6 @@ book.pdf를 1-100, 101-200으로 나눠줘
 | in-place 명시적 | `--in-place` 옵션이 있어야만 원본 덮어쓰기 |
 | 검증 후 실행 | 페이지 인자·순서 등을 사전 검증, 잘못된 입력은 거부 |
 
-## 작업 흐름 — pdf-scan-audit과 연계
-
-```
-1. /audit-pdf book.pdf
-   → "p.54, p.98 회전 의심" 결과
-2. /pdf-rotate book.pdf 54,98 180
-3. /audit-pdf book.pdf.modified.pdf
-   → 회전 문제 해결 확인
-```
-
 ## 의존성
 
 - Python 3.8+

@@ -44,22 +44,6 @@
   --subject "Distributed Systems"
 ```
 
-## scan-audit과 연계
-
-### 검사 → 의심 페이지 회전 → 재검사
-```bash
-# 1. 검사
-/audit-pdf book.pdf
-# 결과: "p.54, p.98 회전 의심"
-
-# 2. 회전
-/pdf-rotate book.pdf 54,98 180 -o book.fixed.pdf
-
-# 3. 재검사
-/audit-pdf book.fixed.pdf
-# 결과: 회전 문제 해결 확인
-```
-
 ## 전체 페이지 90° 회전 (가로 스캔본을 세로로)
 ```bash
 /pdf-rotate scan.pdf all 90

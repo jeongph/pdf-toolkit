@@ -1,6 +1,6 @@
 {
   "name": "pdf-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "범용 PDF 수정 도구 - 페이지 회전·삭제·순서변경·추출, PDF 병합·분할, 메타데이터 편집",
   "author": {
     "name": "jeongph"
