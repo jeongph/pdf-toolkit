@@ -1,6 +1,6 @@
 ---
 name: pdf-toolkit
-description: Use this skill when the user wants to modify PDF files — rotate pages, delete pages, reorder pages, extract pages into new PDF, merge multiple PDFs, split a PDF, or edit PDF metadata. Korean triggers "PDF 회전", "페이지 회전", "페이지 회전시켜", "페이지 삭제", "페이지 빼", "페이지 제거", "PDF 합치기", "PDF 병합", "PDF 분할", "PDF 나누기", "페이지 추출", "페이지 뽑아", "페이지 순서", "PDF 순서 바꿔", "PDF 메타데이터", "제목 바꿔", "PDF 수정". English triggers "rotate PDF page", "delete page", "merge PDFs", "split PDF", "extract pages", "reorder pages", "edit PDF metadata". Non-destructive by default: original file is preserved, output goes to new file unless user explicitly requests in-place edit.
+description: 'Use this skill when the user wants to modify PDF files — rotate pages, delete pages, reorder pages, extract pages into new PDF, merge multiple PDFs, split a PDF, or edit PDF metadata. Korean triggers "PDF 회전", "페이지 회전", "페이지 회전시켜", "페이지 삭제", "페이지 빼", "페이지 제거", "PDF 합치기", "PDF 병합", "PDF 분할", "PDF 나누기", "페이지 추출", "페이지 뽑아", "페이지 순서", "PDF 순서 바꿔", "PDF 메타데이터", "제목 바꿔", "PDF 수정". English triggers "rotate PDF page", "delete page", "merge PDFs", "split PDF", "extract pages", "reorder pages", "edit PDF metadata". Non-destructive by default: original file is preserved, output goes to new file unless user explicitly requests in-place edit.'
 ---
 
 # PDF Toolkit
