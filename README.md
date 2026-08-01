@@ -1,5 +1,8 @@
 # pdf-toolkit
 
+[![version](https://img.shields.io/github/v/release/jeongph/pdf-toolkit?label=version&color=blue)](https://github.com/jeongph/pdf-toolkit/releases)
+[![license](https://img.shields.io/github/license/jeongph/pdf-toolkit?color=lightgrey)](LICENSE)
+
 > 범용 PDF 수정 도구 — 페이지 회전·삭제·순서변경·추출, PDF 병합·분할, 메타데이터 편집을 안전한 비파괴 방식으로 수행합니다.
 
 PyMuPDF 기반으로 일상적인 PDF 작업 대부분을 처리하는 Claude Code 플러그인입니다. 자연어로 호출하거나 슬래시 명령으로 정밀 제어할 수 있고, **원본은 항상 보존**됩니다.
