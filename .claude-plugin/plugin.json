@@ -1,7 +1,7 @@
 {
   "name": "pdf-toolkit",
   "version": "0.1.2",
-  "description": "범용 PDF 수정 도구 - 페이지 회전·삭제·순서변경·추출, PDF 병합·분할, 메타데이터 편집",
+  "description": "PDF 페이지를 회전하거나 삭제하고, 문서를 합치거나 나눕니다. 기본적으로 원본은 그대로 둡니다.",
   "author": {
     "name": "jeongph"
   },

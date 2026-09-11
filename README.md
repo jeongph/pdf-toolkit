@@ -3,9 +3,9 @@
 [![version](https://img.shields.io/github/v/release/jeongph/pdf-toolkit?label=version&color=blue)](https://github.com/jeongph/pdf-toolkit/releases)
 [![license](https://img.shields.io/github/license/jeongph/pdf-toolkit?color=lightgrey)](LICENSE)
 
-> 범용 PDF 수정 도구 — 페이지 회전·삭제·순서변경·추출, PDF 병합·분할, 메타데이터 편집을 안전한 비파괴 방식으로 수행합니다.
+PDF 페이지를 회전하거나 삭제하고, 문서를 합치거나 나눕니다. 기본적으로 원본은 그대로 둡니다.
 
-PyMuPDF 기반으로 일상적인 PDF 작업 대부분을 처리하는 Claude Code 플러그인입니다. 자연어로 호출하거나 슬래시 명령으로 정밀 제어할 수 있고, **원본은 항상 보존**됩니다.
+기본적으로 결과를 새 파일에 저장합니다. 원본을 덮어쓰려면 `--in-place` 옵션을 명시해야 합니다.
 
 ## 설치
 
@@ -44,11 +44,11 @@ book.pdf를 1-100, 101-200으로 나눠줘
 
 ## 지원 작업
 
-| 작업 | slash command | 설명 |
+| 작업 | 슬래시 명령 | 설명 |
 |---|---|---|
 | 페이지 회전 | `/pdf-rotate` | 단일/범위/전체 페이지 90·180·270° 회전 |
 | 페이지 삭제 | `/pdf-delete` | 지정 페이지 제거 |
-| 페이지 순서 변경 | `/pdf-reorder` | 새 순서 명시 또는 두 페이지 swap |
+| 페이지 순서 변경 | `/pdf-reorder` | 새 순서 명시 또는 두 페이지 교환 |
 | 페이지 추출 | `/pdf-extract` | 지정 페이지만 새 PDF로 |
 | PDF 병합 | `/pdf-merge` | 여러 PDF를 하나로 |
 | PDF 분할 | `/pdf-split` | 페이지 범위로 여러 PDF로 분할 |
@@ -66,9 +66,9 @@ book.pdf를 1-100, 101-200으로 나눠줘
 
 | 원칙 | 구현 |
 |---|---|
-| 원본 절대 보존 | 모든 작업은 새 파일에 출력 |
+| 원본 보존이 기본 | 기본적으로 결과를 새 파일에 출력 |
 | 출력 경로 명시 | `-o`로 지정. 미지정 시 `<원본>.modified.pdf` 자동 생성 |
-| in-place 명시적 | `--in-place` 옵션이 있어야만 원본 덮어쓰기 |
+| 원본 덮어쓰기 조건 | `--in-place` 옵션이 있어야만 원본 덮어쓰기 |
 | 검증 후 실행 | 페이지 인자·순서 등을 사전 검증, 잘못된 입력은 거부 |
 
 ## 의존성
@@ -111,7 +111,7 @@ pdf-toolkit/
 
 - 페이지 크기 정규화·마진 크롭
 - DPI 다운샘플·이미지 재압축·워터마크
-- OCR 레이어 재생성 (별도 plugin 가능성)
+- OCR 레이어 재생성 (별도 플러그인으로 제공할 가능성)
 
 ## 라이선스
 
