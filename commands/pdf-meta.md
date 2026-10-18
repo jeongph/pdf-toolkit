@@ -22,8 +22,8 @@ PDF의 메타데이터(`title`, `author`, `subject`, `keywords`, `creator`, `pro
 
 ## 인자
 
-- `<pdf>` — 입력 PDF
-- `--show` — 현재 메타데이터를 JSON으로 출력 후 종료
-- `--title`, `--author`, `--subject`, `--keywords`, `--creator`, `--producer` — 편집할 필드 (선택, 여러 개 동시 가능)
-- `-o, --out <path>` — 출력 경로 (선택)
-- `--in-place` — 원본 덮어쓰기 (선택)
+- `<pdf>`: 입력 PDF
+- `--show`: 현재 메타데이터를 JSON으로 출력 후 종료
+- `--title`, `--author`, `--subject`, `--keywords`, `--creator`, `--producer`: 편집할 필드 (선택, 여러 개 동시 가능)
+- `-o, --out <path>`: 출력 경로 (선택)
+- `--in-place`: 원본 덮어쓰기 (선택)

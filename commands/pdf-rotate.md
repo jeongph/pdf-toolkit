@@ -18,12 +18,12 @@ argument-hint: <pdf> <pages> <degrees> [-o <out>]
 
 ## 인자
 
-- `<pdf>` — 입력 PDF 경로
-- `<pages>` — 페이지 인자 (예: `5`, `5-10`, `1,3,5`, `all`, `15-`)
-- `<degrees>` — 회전 각도. 90, 180, 270, -90, -180, -270 중 하나
-- `-o, --out <path>` — 출력 경로 (선택)
-- `--in-place` — 원본 덮어쓰기 (선택, 명시 필요)
+- `<pdf>`: 입력 PDF 경로
+- `<pages>`: 페이지 인자 (예: `5`, `5-10`, `1,3,5`, `all`, `15-`)
+- `<degrees>`: 회전 각도. 90, 180, 270, -90, -180, -270 중 하나
+- `-o, --out <path>`: 출력 경로 (선택)
+- `--in-place`: 원본 덮어쓰기 (선택, 명시 필요)
 
 ## 동작
 
-`${CLAUDE_PLUGIN_ROOT}/skills/pdf-toolkit/scripts/rotate.py` 실행. 페이지 메타의 `/Rotate` 값만 변경하므로 빠르고 무손실입니다.
+`${CLAUDE_PLUGIN_ROOT}/skills/pdf-toolkit/scripts/rotate.py`를 실행합니다. 페이지 메타의 `/Rotate` 값만 변경하므로 빠르고 무손실입니다.

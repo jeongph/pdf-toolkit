@@ -5,14 +5,14 @@ description: 'Use this skill when the user wants to modify PDF files — rotate 
 
 # PDF Toolkit
 
-PyMuPDF 기반 범용 PDF 수정 도구. 페이지·문서·메타데이터 수정을 안전한 비파괴 방식으로 처리합니다.
+PyMuPDF 기반의 범용 PDF 수정 도구입니다. 페이지, 문서, 메타데이터 수정을 안전한 비파괴 방식으로 처리합니다.
 
 ## 안전 원칙 (필수 준수)
 
-1. **원본 절대 보존** — 모든 작업은 새 파일에 출력. 사용자가 명시적으로 `--in-place` 요청한 경우에만 덮어씀
-2. **출력 경로** — `-o`로 명시. 미지정 시 `<원본>.modified.pdf` 자동 생성
-3. **사전 확인** — 5페이지 이상 삭제·전체 순서 대규모 변경 시 `AskUserQuestion`으로 재확인
-4. **백업 권장** — 첫 작업 시 사용자에게 "원본은 자동 보존됩니다"라고 안내
+1. **원본 절대 보존**: 모든 작업은 새 파일에 출력. 사용자가 명시적으로 `--in-place`를 요청한 경우에만 덮어씀
+2. **출력 경로**: `-o`로 명시. 미지정 시 `<원본>.modified.pdf` 자동 생성
+3. **사전 확인**: 5페이지 이상 삭제하거나 전체 순서를 대규모로 바꿀 때 `AskUserQuestion`으로 재확인
+4. **백업 권장**: 첫 작업 시 사용자에게 "원본은 자동 보존됩니다"라고 안내
 
 ## 지원 작업
 
@@ -24,7 +24,7 @@ PyMuPDF 기반 범용 PDF 수정 도구. 페이지·문서·메타데이터 수�
 | 페이지 추출 | `extract.py` | `/pdf-extract` | 지정 페이지만 새 PDF로 |
 | PDF 병합 | `merge.py` | `/pdf-merge` | 여러 PDF를 하나로 |
 | PDF 분할 | `split.py` | `/pdf-split` | 페이지 범위로 여러 PDF로 분할 |
-| 메타데이터 편집 | `meta.py` | `/pdf-meta` | title·author·subject·keywords 편집 |
+| 메타데이터 편집 | `meta.py` | `/pdf-meta` | title, author, subject, keywords 편집 |
 
 ## 페이지 지정 문법
 
@@ -64,9 +64,9 @@ python3 ${CLAUDE_PLUGIN_ROOT}/skills/pdf-toolkit/scripts/<task>.py <args> -o <ou
 ## 자연어 명령 처리
 
 사용자가 자연어로 "이 PDF 54페이지 회전시켜줘"라고 하면:
-1. 의도 파악: 작업=rotate, 페이지=54, 각도=180 (기본값) — 각도 생략 시 사용자에게 확인
+1. 의도 파악: 작업=rotate, 페이지=54, 각도=180 (기본값). 각도를 생략했으면 사용자에게 확인
 2. 위 워크플로우 진행
-3. 출력 경로 미명시 시 자동 생성
+3. 출력 경로를 명시하지 않았으면 자동 생성
 
 ## 자세한 가이드
 
