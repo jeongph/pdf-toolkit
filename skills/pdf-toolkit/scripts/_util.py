@@ -37,7 +37,7 @@ def resolve_output(input_path: str, out_arg: str | None, in_place: bool, suffix:
 
 
 def safe_save(doc, input_path: str, output_path: str) -> None:
-    """입력==출력이면 incremental save, 아니면 일반 save."""
+    """입력과 출력이 같으면 incremental save, 아니면 일반 save."""
     if os.path.abspath(input_path) == os.path.abspath(output_path):
         doc.saveIncr()
     else:

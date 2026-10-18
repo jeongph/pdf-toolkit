@@ -22,12 +22,12 @@ argument-hint: <pdf> <order|swap:a,b> [-o <out>]
 
 ## 인자
 
-- `<pdf>` — 입력 PDF
-- `<order>` — 새 순서 또는 `swap:a,b`
+- `<pdf>`: 입력 PDF
+- `<order>`: 새 순서 또는 `swap:a,b`
   - `swap:5,7`: 5번과 7번만 교환
   - `3,1,2,4-end`: 새 순서 전체 명시 (모든 페이지 정확히 한 번)
-- `-o, --out <path>` — 출력 경로 (선택, 기본 `<원본>.reordered.pdf`)
+- `-o, --out <path>`: 출력 경로 (선택, 기본 `<원본>.reordered.pdf`)
 
 ## 안전 정책
 
-새 순서가 모든 페이지를 정확히 한 번 참조하지 않으면 작업 거부.
+새 순서가 모든 페이지를 정확히 한 번 참조하지 않으면 작업을 거부합니다.

@@ -17,6 +17,6 @@ argument-hint: <pdf> <pages> [-o <out>]
 
 ## 인자
 
-- `<pdf>` — 입력 PDF
-- `<pages>` — 추출할 페이지 인자
-- `-o, --out <path>` — 출력 경로 (선택, 기본 `<원본>.extracted.pdf`)
+- `<pdf>`: 입력 PDF
+- `<pages>`: 추출할 페이지 인자
+- `-o, --out <path>`: 출력 경로 (선택, 기본 `<원본>.extracted.pdf`)

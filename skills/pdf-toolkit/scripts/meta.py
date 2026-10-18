@@ -13,7 +13,7 @@ import fitz  # noqa: E402
 
 
 def main():
-    ap = argparse.ArgumentParser(description="PDF 메타데이터 표시·편집")
+    ap = argparse.ArgumentParser(description="PDF 메타데이터 표시 또는 편집")
     ap.add_argument("pdf")
     ap.add_argument("--show", action="store_true", help="현재 메타데이터를 JSON으로 출력하고 종료")
     ap.add_argument("--title")
